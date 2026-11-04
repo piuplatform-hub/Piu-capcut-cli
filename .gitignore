@@ -1,0 +1,62 @@
+node_modules/
+dist/
+*.bak
+
+# python/ client package build artifacts
+python/dist/
+python/build/
+python/*.egg-info/
+__pycache__/
+
+# Local tooling, caches, logs and credentials
+.venv/
+venv/
+.cache/
+.pytest_cache/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Footage, audio, exports and downloaded models belong outside Git.
+# Keep src/ (program source), templates and the small JSON test fixtures.
+media/
+footage/
+sources/
+renders/
+exports/
+CapCut_Edit/
+_analysis/
+_work_remaining/
+_tools/
+models/
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.m4v
+*.mp3
+*.wav
+*.m4a
+*.aac
+*.flac
+*.ogg
+*.bin
+*.safetensors
+*.onnx
+*.pt
+*.pth
+*.zip
+*.7z
+*.tar
+*.gz
+
+# Upstream account-specific publishing/auto-merge configuration.
+# Reconfigure deliberately for this repository before enabling it.
+.github/workflows/release.yml
+.github/workflows/dependabot-auto-merge.yml
+.github/FUNDING.yml
